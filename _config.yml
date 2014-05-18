@@ -1,0 +1,17 @@
+# General Jekyll Config
+pygments: true
+paginate: 5
+url: http://maberger.com
+lsi: false
+exclude: [CNAME, README.md, .gitignore]
+markdown: kramdown
+
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#329d56'
+
+  name: Mark Berger
+  email: maberger@uwaterloo.ca
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-xxxx-x
