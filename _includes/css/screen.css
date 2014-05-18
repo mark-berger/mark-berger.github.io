@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: #f9f9f9;
+  border-top: 1rem solid {{ site.theme.highlight_color }};
+  color: #222;
+  font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  border-bottom: 1px solid #999;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-top: 1.5rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
+h5 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+nav.primary {
+  display: table;
+  margin: 0 auto;
+}
+
+nav.primary ul {
+  float: right;
+}
+
+nav.primary ul,
+nav.primary ul li {
+  margin: 0px;
+}
+
+nav.primary select {
+  display: none;
+  height: 3rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+nav.primary ul li {
+  display: inline;
+  position: relative;
+}
+
+nav.primary ul li a {
+  color: black;
+  display: inline-block;
+  font-size: 2.2rem;
+  font-family: "Patua One", Cambria, serif;
+  line-height: 5rem;
+  padding: 0 14px;
+  text-decoration: none;
+}
+
+nav.primary ul li a:hover {
+  color: {{ site.theme.highlight_color }};
+  cursor: pointer;
+}
+
+p {
+  color: #333;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+ul, ol {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+ul {
+  list-style: disc;
+}
+
+hr {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+a {
+  color: {{ site.theme.highlight_color }};
+  text-decoration: none;
+}
+
+a:hover {
+  color: {{ site.theme.highlight_color }};
+  text-decoration: underline;
+}
+
+a:visited {
+  color: {{ site.theme.highlight_color }};
+}
+
+code,pre {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace
+}
+
+table {
+  font: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+blockquote {
+  margin-left: 0;
+}
+
+blockquote p {
+  border-color: {{ site.theme.highlight_color }};
+  border-style: solid;
+  border-width: 0 0 0 0.3rem;
+  margin-bottom: 3.5rem;
+  margin-left: 0.5rem;
+  padding-left: 2rem;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0 auto;
+  width: 700px;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure figcaption {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.blog-posts {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.blog-posts li {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 0;
+}
+
+.blog-posts div {
+  color: #666;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+  width: 10rem;
+}
+
+.meta {
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+.site .footer {
+  color: #666;
+  border-top: 1px solid #666;
+  overflow: hidden;
+}
+
+nav h1, nav h2 {
+  text-align: center;
+}
+
+.sidebar hr {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border: dotted #bbb;
+  border-width: 1px 0 0;
+}
+
+.circle {
+  background-color: {{ site.theme.highlight_color }};
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, .1);
+  display: table;
+  height: 15rem;
+  margin: 0 auto;
+  width: 15rem;
+  -webkit-box-shadow: 0 0.5rem 0 0 rgba(0, 0, 0, .1);
+}
+
+.circle p {
+  color: #f9f9f9;
+  display: table-cell;
+  font-family: "Patua One", Cambria, serif;
+  font-size: 2.8rem;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 0 0.3rem 0 rgba(0, 0, 0, .1);
+  vertical-align: middle;
+  width: 100%;
+}
+
+.social {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.highlight code {
+  padding-left: 0rem;
+}
+
+.post pre {
+  padding: 0.5rem 0.5rem;
+}
+
+.post ul,
+.post ol {
+  margin-left: 2rem;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  padding: 0.2rem 0;
+}
+
+.post pre code {
+  border: none;
+}
+
+.sidebar {
+  padding-top: 2.5rem;
+}
+
+.sidebar h4 {
+  font-family: "Patua One", Cambria, serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.sidebar a {
+  font-weight: 700;
+}
+
+.content {
+  border-left: 1px solid #ddd;
+  min-height: 40rem;
+  padding-left: 4rem;
+  padding-top: 2.5rem;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer {
+  font-size: 80%;
+  color: #666;
+  overflow: hidden;
+}
+
+.aside {
+  font-size: 75%;
+  color: #666;
+}
+
+#home h2 {
+  color: {{ site.theme.highlight_color }};
+}
+
+#logo {
+  margin-bottom: 2.5rem;
+}
+
+.stalker {
+  display: inline-block;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+.stalker a {
+  width: 3rem;
+  overflow: hidden;
+  float: left;
+}
+
+.stalker i {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+}
+
+.stalker a:hover {
+  text-decoration: none;
+  color: {{ site.theme.highlight_color }};
+}
+
+.home {
+  font-size: 2.4rem;
+  float: right;
+  color: #666;
+}
+
+.home:hover {
+  text-decoration: none;
+}
+
+.disclaimer p {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.footnote {
+  font-size: 1.4rem;
+  position: relative;
+  top: -0.2rem;
+}
+
+.footnotes {
+  font-size: 1.6rem;
+}
+
+.footnotes p {
+  font-size: 1.8rem;
+}
+
+.icon-overlay {
+  font-size: 1.6rem !important;
+  position: relative;
+  bottom: 2.7rem;
+  left: 0.5rem;
+  color: white;
+}
+
+.caption {
+  margin: 0 auto;
+  text-align: center;
+  font-size: smaller;
+  padding-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+table caption {
+  font-family: Cambria, Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+table th {
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+}
+
+table td {
+  border: 1px solid #aaa;
+  padding: 0.5rem 1.5rem;
+}
+
+table tr {
+  border-top: 1px solid #aaa;
+}
+
+table tr:nth-child(2n) {
+  background-color: #eee;
+}
