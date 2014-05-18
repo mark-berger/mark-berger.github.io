@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.theme.name }} - {{ page.title }}</title>
+  <meta name="author" content="{{ site.theme.name }}" />
+  <meta name="description" content="Personal website of {{ site.theme.name }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
+  <link href='http://fonts.googleapis.com/css?family=Patua+One|PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.theme.name }}" href="{{site.url}}/atom.xml" />
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="four columns sidebar">
+      <div class="circle">
+        <p>Mark<br>Berger<p>
+      </div>
+      <hr/>
+      <div class="social">
+        <div class="stalker">
+          <a title="Email" href="&#109;&#097;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#98;&#101;&#114;&#103;&#101;&#114;&#64;&#117;&#119;&#97;&#116;&#101;&#114;&#108;&#111;&#111;&#46;&#99;&#97;">
+            <i class="fa fa-envelope-square"></i>
+          </a>
+          <a title="mark-berger on Github" href="https://github.com/mark-berger">
+            <i class="fa fa-github-square"></i>
+          </a>
+          <a title="maberger on LinkedIn" href="https://www.linkedin.com/in/maberger">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="eleven columns content">
+      <nav class="primary">
+        <div class="eleven columns">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Timeline</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="sixteen columns">
+      <div class="timeline">
+        <img src="/assets/images/timeline.svg" alt="Timeline"/>
+      </div>
+      <div class="footer">
+        <div class="disclaimer">
+          <p>
+            © {{ site.theme.name }}, 2014 &mdash; built with Jekyll, hosted on <a href="https://github.com/mark-berger/mark-berger.github.io">Github Pages</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% include analytics.html %}
+</body>
+</html>
