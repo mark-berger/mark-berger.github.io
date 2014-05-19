@@ -65,6 +65,7 @@ h6 {
 
 nav.primary {
   display: table;
+  float: right;
   margin: 0 auto;
 }
 
@@ -397,10 +398,6 @@ nav h1, nav h2 {
   padding-bottom: 1rem;
 }
 
-.resume {
-  width: 720px;
-}
-
 .technical ul {
   font-size: 1.6rem;
   list-style-type: none;
@@ -444,7 +441,7 @@ nav h1, nav h2 {
   text-align: right;
 }
 
-.three {
+.threecol {
   moz-column-gap: 20;
   -moz-column-count: 3;
   -webkit-column-count: 3;

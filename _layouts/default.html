@@ -14,7 +14,16 @@
 </head>
 <body>
   <div class="container">
-    <div class="four columns sidebar">
+    <div class="sixteen columns">
+      <nav class="primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/resume.html">Resume</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="three columns sidebar">
       <div class="circle">
         <p>Mark<br>Berger<p>
       </div>
@@ -33,19 +42,8 @@
         </div>
       </div>
     </div>
-    <div class="eleven columns content">
-      <nav class="primary">
-        <div class="eleven columns">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/resume.html">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div>
-        {{ content }}
-      </div>
+    <div class="twelve columns content">
+      {{ content }}
     </div>
   </div>
   <div class="container">
