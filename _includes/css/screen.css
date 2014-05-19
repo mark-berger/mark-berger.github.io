@@ -35,13 +35,17 @@ h1 {
 h2 {
   font-size: 2.8rem;
   line-height: 3.2rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
+  border-bottom: 1px solid {{ site.theme.highlight_color }};
+  color: {{ site.theme.highlight_color }};
   font-size: 2.4rem;
   line-height: 2.8rem;
+  margin-bottom: 1rem;
   margin-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 h4 {
@@ -50,7 +54,7 @@ h4 {
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
@@ -111,9 +115,9 @@ p {
 }
 
 ul, ol {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   padding-left: 1rem;
 }
 
@@ -330,7 +334,6 @@ nav h1, nav h2 {
 .stalker {
   display: inline-block;
   height: 2rem;
-  margin-left: 0.5rem;
 }
 
 .stalker a {
@@ -392,6 +395,66 @@ nav h1, nav h2 {
   text-align: center;
   font-size: smaller;
   padding-bottom: 1rem;
+}
+
+.resume {
+  width: 720px;
+}
+
+.technical ul {
+  font-size: 1.6rem;
+  list-style-type: none;
+}
+
+.technical .left {
+  float: left;
+}
+
+.technical .right {
+  font-size: 1.6rem;
+  font-weight: 700;
+  float: right;
+  text-align: right;
+}
+
+.bullet {
+  margin-bottom: 1.5rem;
+}
+
+.bullet li {
+  list-style-image: url(/assets/images/bullet.png);
+  margin-left: 1.5rem;
+}
+
+.entry p {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry .left {
+  float: left;
+}
+
+.entry .right {
+  float: right;
+  text-align: right;
+}
+
+.entry .right p {
+  text-align: right;
+}
+
+.three {
+  moz-column-gap: 20;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20;
+  column-count: 3;
+  column-gap: 20;
+}
+
+.interest {
+  list-style-type: none;
 }
 
 table {
