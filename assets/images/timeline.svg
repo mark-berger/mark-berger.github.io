@@ -11,8 +11,8 @@
   <g>
     <title>Layer 1</title>
     <!-- Middle -->
-    <line fill="none" stroke="#329d56" stroke-width="7" x1="50" y1="100" x2="402" y2="100"/>
-    <line fill="none" stroke="#aaa" stroke-width="7" x1="402" y1="100" x2="452" y2="100"/>
+    <line fill="none" stroke="#329d56" stroke-width="7" x1="50" y1="100" x2="428" y2="100"/>
+    <line fill="none" stroke="#aaa" stroke-width="7" x1="428" y1="100" x2="452" y2="100"/>
     <circle fill="#ffffff" stroke="#329d56" stroke-width="7" cx="50" cy="100" r="10"/>
 
     <!-- Top -->
@@ -41,7 +41,7 @@
     <text stroke="#000000" stroke-width="0" x="385" y="40" text-anchor="middle">3B</text>
 
     <line fill="none" stroke="#329d56" stroke-width="7" x1="400" y1="100" x2="430" y2="70"/>
-    <circle fill="#ffffff" stroke="#333" stroke-width="7" cx="435" cy="65" r="9"/>
+    <circle fill="#ffffff" stroke="#329d56" stroke-width="7" cx="435" cy="65" r="9"/>
     <text stroke="#000000" stroke-width="0" x="435" y="40" text-anchor="middle">4A</text>
 
     <line fill="none" stroke="#aaa" stroke-width="7" x1="450" y1="100" x2="480" y2="70"/>
@@ -69,8 +69,8 @@
     <circle fill="#ffffff" stroke="#329d56" stroke-width="7" cx="360" cy="135" r="9"/>
     <text stroke="#000000" stroke-width="0" x="360" y="170" text-anchor="middle">WT 5</text>
 
-    <line fill="none" stroke="#aaa" stroke-width="7" x1="425" y1="100" x2="455" y2="130"/>
-    <circle fill="#ffffff" stroke="#aaa" stroke-width="7" cx="460" cy="135" r="9"/>
+    <line fill="none" stroke="#329d56" stroke-width="7" x1="425" y1="100" x2="455" y2="130"/>
+    <circle fill="#ffffff" stroke="#333" stroke-width="7" cx="460" cy="135" r="9"/>
     <text stroke="#000000" stroke-width="0" x="460" y="170" text-anchor="middle">WT 6</text>
 
   </g>
