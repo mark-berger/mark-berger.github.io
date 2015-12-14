@@ -2,5 +2,18 @@
 <html>
   {% include head.html %}
   <body>
+    <div class="sidebar">
+      <div class="sidebar-sticky">
+        Mark Berger
+        {% include nav.html %}
+      </div>
+    </div>
+    <main>
+      <div class="content container">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+      </div>
+    </main>
   </body>
 </html>
