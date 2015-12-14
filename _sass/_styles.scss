@@ -9,7 +9,7 @@ body {
   background-color:           $color-light;
   color:                      $color-dark;
   font-family:                $base-font-family;
-  font-size:                  $font-size-body;
+  font-size:                  $font-size-main;
   font-weight:                300;
 }
 
@@ -19,6 +19,43 @@ body {
   transition:                 width 0.25s ease;
 }
 
+.sidebar-container {
+  display:                    flex;
+  justify-content:            space-between;
+  flex-wrap:                  wrap;
+}
+
+.sidebar-container nav {
+  align-items:                center;
+  display:                    flex;
+  justify-content:            center;
+}
+
+.sidebar-item {
+  width:                      100%;
+}
+
+nav ul {
+  font-size:                  $font-size-tiny;
+  font-weight:                700;
+  padding-left:               0;
+  text-transform:             uppercase;
+}
+
+nav ul li {
+  list-style:                 none;
+  padding:                    0.75rem 0;
+}
+
+.brand {
+  align-self:                 flex-start;
+}
+
+.end {
+  align-self:                 flex-end;
+}
+
+
 .sidebar-title {
   display:                    inline-block;
   font-size:                  2.4rem;
@@ -27,7 +64,7 @@ body {
 }
 
 .title-first {
-  margin-right:              4rem;
+  margin-right:               4rem;
 }
 
 .title-second {
@@ -57,6 +94,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
 
   .sidebar-container {
     margin:                   0 auto;
+    min-height:               100vh;
   }
 
   .logo {
