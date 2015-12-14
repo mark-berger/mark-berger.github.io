@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
 html, body {
   font-size:                  62.5%;
   height:                     100%;
@@ -6,14 +8,36 @@ html, body {
 body {
   background-color:           $color-light;
   color:                      $color-dark;
+  font-family:                $base-font-family;
   font-size:                  $font-size-body;
+  font-weight:                300;
 }
 
 .sidebar {
   background-color:           $color-dark;
   color:                      $color-light;
-  text-align:                 left;
   transition:                 width 0.25s ease;
+}
+
+.sidebar-title {
+  display:                    inline-block;
+  font-size:                  2.4rem;
+  font-weight:                700;
+  text-transform:             uppercase;
+}
+
+.title-first {
+  margin-right:              4rem;
+}
+
+.title-second {
+  margin:                     -3rem 0 0 3rem;
+}
+
+.logo {
+  margin:                     2rem 0 2rem 2rem;
+  transition:                 width 0.25s ease;
+  width:                      7.5rem;
 }
 
 /*******************************************************************************
@@ -30,16 +54,37 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
     top:                      0;
     width:                    15rem;
   }
+
+  .sidebar-container {
+    margin:                   0 auto;
+  }
+
+  .logo {
+    margin:                   4rem 0 0 0;
+    width:                    10rem;
+  }
 }
 
 @media (min-width: 60rem) {
   .sidebar {
     width:                    20rem;
   }
+
+  .logo {
+    width:                    15rem;
+  }
+
+  .sidebar-title {
+    font-size:                3rem;
+  }
 }
 
 @media (min-width: 80rem) {
   .sidebar {
     width:                    30rem;
+  }
+
+  .logo {
+    width:                    17.5rem;
   }
 }
