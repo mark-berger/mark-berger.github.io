@@ -3,21 +3,94 @@
 html, body {
   font-size:                  62.5%;
   height:                     100%;
+  line-height:                1.4;
 }
 
 body {
   background-color:           $color-light;
   color:                      $color-dark;
-  font-family:                $base-font-family;
+  font-family:                $font-family-sans;
   font-size:                  $font-size-small;
   font-weight:                300;
+}
+
+h1, h2, h3 {
+  font-weight:                500;
+  letter-spacing:             -0.05rem;
 }
 
 h1 {
   border-bottom:              0.1rem solid $color-dark;
   font-size:                  $font-size-large;
-  font-weight:                500;
-  letter-spacing:             -0.1rem;
+}
+
+h2 {
+  font-size:                  2.6rem;
+}
+
+h3 {
+  font-size:                  2.4rem;
+}
+
+a {
+  color:                      #34495e;
+}
+
+blockquote {
+  border-left:                0.25rem solid lighten($color-dark, 20%);
+  color:                      lighten($color-dark, 20%);
+  margin:                     1rem 0;
+  padding:                    0 3rem 0 3rem;
+}
+
+blockquote p:last-child {
+  margin-bottom:              0;
+}
+
+code, pre, kbd {
+  font-family:                $font-family-mono;
+  font-size:                  90%;
+}
+
+code {
+  background-color:           darken($color-light, 8%);
+  color:                      #c0392b;
+  padding:                    0.25rem 0.5rem;
+}
+
+pre {
+  padding:                    2rem;
+}
+
+dt {
+  font-weight:                700;
+}
+
+dd {
+  margin-bottom:              1rem;
+}
+
+img {
+  display:                    block;
+  max-width:                  100%;
+  margin:                     0 0 1rem;
+}
+
+table {
+  border-collapse:            collapse;
+  border:                     0.1rem solid darken($color-light, 10%);
+  margin-bottom:              1rem;
+  width:                      100%;
+}
+
+td, th {
+  border:                     0.1rem solid darken($color-light, 10%);
+  padding:                    .25rem .5rem;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color:           darken($color-light, 5%);
 }
 
 .sidebar {
