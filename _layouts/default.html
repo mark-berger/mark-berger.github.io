@@ -8,10 +8,10 @@
           {% include logo.html %}
           <div class="sidebar-title">
             <p class="title-first">
-              Mark
+              {{ site.title | split: ' ' | first }}
             </p>
             <p class="title-second">
-              Berger
+              {{ site.title | split: ' ' | last }}
             </p>
           </div>
         </div>

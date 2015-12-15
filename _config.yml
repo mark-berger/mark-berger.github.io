@@ -1,3 +1,7 @@
+# Jekyll Settings
 exclude: ["CNAME", "README.md"]
 sass:
     style: :compressed
+
+# Custom Variables
+title: "Mark Berger"

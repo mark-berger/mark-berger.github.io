@@ -9,7 +9,7 @@ body {
   background-color:           $color-light;
   color:                      $color-dark;
   font-family:                $base-font-family;
-  font-size:                  $font-size-main;
+  font-size:                  $font-size-small;
   font-weight:                300;
 }
 
@@ -40,7 +40,7 @@ h1 {
 }
 
 nav ul {
-  font-size:                  $font-size-tiny;
+  font-size:                  $font-size-script;
   font-weight:                700;
   padding-left:               0;
   text-transform:             uppercase;
@@ -81,12 +81,31 @@ nav ul li {
 }
 
 .container {
-  padding-top:                5rem;
+  min-height:                 100vh;
+  overflow:                   hidden;
+  padding:                    5rem 0 15rem 0;
+  position:                   relative;
 }
 
 .content {
   margin:                     0 auto;
   padding:                    0 5rem;
+}
+
+footer {
+  bottom:                     0;
+  position:                   absolute;
+  text-align:                 center;
+  width:                      100%;
+}
+
+.contact svg {
+  height:                     5rem;
+  width:                      5rem;
+}
+
+.copyright {
+  font-size:                  $font-size-footnote;
 }
 
 /*******************************************************************************
@@ -95,6 +114,10 @@ that units are never based on results of declarations. For example, in HTML,
 the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
 *******************************************************************************/
 @media (min-width: 50rem) {
+  body {
+    font-size:                $font-size-normal;
+  }
+
   .sidebar {
     bottom:                   0;
     left:                     0;
