@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700);
 
 html, body {
   font-size:                  62.5%;
@@ -11,6 +11,13 @@ body {
   font-family:                $base-font-family;
   font-size:                  $font-size-main;
   font-weight:                300;
+}
+
+h1 {
+  border-bottom:              0.1rem solid $color-dark;
+  font-size:                  $font-size-large;
+  font-weight:                500;
+  letter-spacing:             -0.1rem;
 }
 
 .sidebar {
@@ -28,14 +35,13 @@ body {
 .sidebar-container nav {
   align-items:                center;
   display:                    flex;
-  flex-direction: column;
+  flex-direction:             column;
   justify-content:            center;
 }
 
 nav ul {
   font-size:                  $font-size-tiny;
   font-weight:                700;
-  margin-top:                 3rem;
   padding-left:               0;
   text-transform:             uppercase;
 }
@@ -47,14 +53,16 @@ nav ul li {
 }
 
 .sidebar-item {
-  display: flex;
+  align-items:                center;
+  display:                    flex;
+  margin:                     0 auto;
 }
 
 .sidebar-title {
   display:                    inline-block;
   font-size:                  2.4rem;
   font-weight:                700;
-  padding:                    1.5rem 0 0 2rem;
+  padding:                    0 0 0 2rem;
   text-transform:             uppercase;
 }
 
@@ -70,6 +78,15 @@ nav ul li {
   margin:                     2rem 0 2rem 2rem;
   transition:                 width 0.25s ease;
   width:                      7.5rem;
+}
+
+.container {
+  padding-top:                5rem;
+}
+
+.content {
+  margin:                     0 auto;
+  padding:                    0 5rem;
 }
 
 /*******************************************************************************
@@ -113,6 +130,15 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
     margin:                   4rem 0 0 0;
     width:                    10rem;
   }
+
+  .container {
+    margin-left:              15rem;
+    padding-top:              10rem;
+  }
+
+  .content {
+    max-width:                58rem;
+  }
 }
 
 @media (min-width: 60rem) {
@@ -127,6 +153,14 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
   .sidebar-title {
     font-size:                3rem;
   }
+
+  .container {
+    margin-left:              20rem;
+  }
+
+  .content {
+    max-width:                62rem;
+  }
 }
 
 @media (min-width: 80rem) {
@@ -136,5 +170,13 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
 
   .logo {
     width:                    17.5rem;
+  }
+
+  .container {
+    margin-left:              30rem;
+  }
+
+  .content {
+    max-width:                72rem;
   }
 }
