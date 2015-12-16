@@ -1,0 +1,179 @@
+{
+  "technical_skills": [
+    {
+      "description": "Advanced skill with modern web technologies",
+      "items": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "D3.js",
+        "AngularJS 1.x"
+      ]
+    },
+    {
+      "description": "Experienced with web frameworks including",
+      "items": [
+        "Django",
+        "Flask",
+        "Ruby on Rails",
+        "ASP.NET"
+      ]
+    },
+    {
+      "description": "Strong RDBMS design capability with",
+      "items": [
+        "MySQL",
+        "SQL Server",
+        "PostgresSQL",
+        "SQLite"
+      ]
+    },
+    {
+      "description": "Excellent skill with object oriented programming",
+      "items": [
+        "Python",
+        "Java",
+        "VB.NET",
+        "C#"
+      ]
+    },
+    {
+      "description": "Proficiency in test-driven development",
+      "items": [
+        "Jasmine",
+        "unittest",
+        "RSpec",
+        "Spring MVC Test"
+      ]
+    },
+    {
+      "description": "Development experience on different platforms",
+      "items": [
+        "Android",
+        "Unix",
+        "Arduino",
+        "Embedded Systems"
+      ]
+    }
+  ],
+  "skills": [
+    "Excellent written and oral communication skills",
+    "Quick to pick up new technologies; very productive when learning something new",
+    "High attention to detail, strong focus on consistency and clarity",
+    "Natural tendency to take on leadership responsibilities and an active team player",
+    "Smart, motivated self-starter with a passion for software and technology"
+  ],
+  "education": [
+    {
+      "institution": "University of Waterloo",
+      "qualification": "BASc Honours Computer Engineering, Graduated With Distinction",
+      "location": "Waterloo, ON",
+      "start": "Sept 2010",
+      "end": "April 2015"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Developer, Co-op",
+      "company": "ShopLocket & The Blueprint",
+      "location": "Toronto, ON",
+      "start": "Sept 2014",
+      "end": "Dec 2014",
+      "details": [
+        "Added features and improved reliability for shopping cart built with AngularJS",
+        "Developed responsive, fluid, and interactive visualizations using D3.js",
+        "Designed a back-end and jobs to extract data from Facebook, Twitter, and Google APIs",
+        "Individually built an internal dashboard for monitoring and visualizing community growth",
+        "Created a powerful Jekyll build system and web templates using GruntJS, Bower, Haml, Sass"
+      ]
+    },
+    {
+      "title": "Senior Software Engineer, Co-op",
+      "company": "BNOTIONS & Gallop Labs",
+      "location": "Toronto, ON",
+      "start": "Sept 2013",
+      "end": "Dec 2013",
+      "details": [
+        "Built a rich and dynamic single-page web application using AngularJS",
+        "Gained experience with front-end tools such as Sass, Jade, GruntJS, Jasmine, npm",
+        "Developed a RESTful API built on Django, PostgreSQL, interfacing with the Facebook Ads APIs",
+        "Managed pull requests and code reviews as a part of an agile development team using git-flow"
+      ]
+    },
+    {
+      "title": "Senior Web Developer, Co-op",
+      "company": "Wishabi",
+      "location": "Toronto, ON",
+      "start": "Jan 2013",
+      "end": "Apr 2013",
+      "details": [
+        "Developed an authenticated API capable of returning JSON, RSS, and XML formatted data",
+        "Created dynamic ad modules using CSS, JS, and HTML serving millions of views per day",
+        "Automated reporting processes by creating a wrapper for the Google Analytics API",
+        "Feature development with Ruby on Rails, including RSpec test cases following TDD practices",
+        "Gained experience working with Unix in an agile team collaborating using Git"
+      ]
+    },
+    {
+      "title": "Software Developer, Co-op",
+      "company": "Orbit Group Partners Inc.",
+      "location": "Markham, ON",
+      "start": "Sept 2011",
+      "end": "Aug 2012",
+      "details": [
+        "Rebuilt entire application messaging and notification system using JSON web services",
+        "Developed app modules, front-end scripts, back-end architecture and optimized stored procedures",
+        "Designed cross-browser UI elements to enhance usability and application performance",
+        "Refreshed existing HTML and CSS throughout the application with a modern look and feel",
+        "Played an integral role in developing, testing, and documenting a major release version"
+      ]
+    },
+    {
+      "title": "Business Systems Analyst, Co-op",
+      "company": "Orbit Group Partners Inc.",
+      "location": "Markham, ON",
+      "start": "Jan 2011",
+      "end": "Apr 2011",
+      "details": [
+        "Provided efficient and effective resolution directly to customers, triaging technical support issues",
+        "Demonstrated a high level of technical expertise in finding creative solutions to unique problems",
+        "Developed SQL scripts and queries optimized for gathering information and producing reports",
+        "Automated reporting processes with VBA macros, refined processes for handling routine tasks"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "name": "Outstanding Evaluations (All 6 Co-op Work Terms)",
+      "description": "Significantly exceeded all expectations demonstrated by exceptional performance",
+      "location": "Various, ON",
+      "year": "2011-2014"
+    },
+    {
+      "name": "Nortel Networks & President’s Entrance Scholarship",
+      "description": "Awarded to top students entering Electrical and Computer Engineering",
+      "location": "Waterloo, ON",
+      "year": "July 2010"
+    },
+    {
+      "name": "Best Presentation, University of Toronto Space Design Contest",
+      "description": "Best Presentation in an international engineering design competition",
+      "location": "Toronto, ON",
+      "year": "May 2010"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Design",
+      "description": "User interfaces, user experience, layouts and themes, LaTeX"
+    },
+    {
+      "name": "Internet",
+      "description": "Latest web technologies, open-source projects, software development blogs"
+    },
+    {
+      "name": "Entertainment",
+      "description": "Film, photography, television, video games, electronics, biking"
+    }
+  ]
+}
