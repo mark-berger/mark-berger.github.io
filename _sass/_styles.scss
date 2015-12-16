@@ -33,7 +33,7 @@ h3 {
 }
 
 a {
-  color:                      #34495e;
+  color:                      #2980b9;
 }
 
 blockquote {
@@ -54,7 +54,7 @@ code, pre, kbd {
 
 code {
   background-color:           darken($color-light, 8%);
-  color:                      #c0392b;
+  color:                      #2980b9;
   padding:                    0.25rem 0.5rem;
 }
 
@@ -88,8 +88,11 @@ td, th {
   padding:                    .25rem .5rem;
 }
 
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
+th, tfoot {
+  background-color:           darken($color-light, 10%);
+}
+
+tbody tr:nth-child(even) td {
   background-color:           darken($color-light, 5%);
 }
 
@@ -100,6 +103,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .sidebar-container {
+  align-items:                center;
   display:                    flex;
   justify-content:            space-between;
   flex-wrap:                  wrap;
@@ -134,17 +138,13 @@ nav ul li {
 .sidebar-title {
   display:                    inline-block;
   font-size:                  2.4rem;
-  font-weight:                700;
+  font-weight:                500;
   padding:                    0 0 0 2rem;
-  text-transform:             uppercase;
 }
 
-.title-first {
-  margin-right:               4rem;
-}
-
-.title-second {
-  margin:                     -3rem 0 0 3rem;
+.sidebar-title p {
+  margin-bottom:              1.5rem;
+  margin-top:                 0.5rem;
 }
 
 .logo {
@@ -247,7 +247,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
   }
 
   .sidebar-title {
-    font-size:                3rem;
+    font-size:                $font-size-large;
   }
 
   .container {
