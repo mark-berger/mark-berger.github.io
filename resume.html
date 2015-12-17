@@ -2,6 +2,80 @@
 layout: default
 permalink: /resume/
 ---
-
+{% assign resume = site.data.resume %}
 <div class="resume">
+  <p class="name">{{ site.title }}</p>
+  <div class="resume-section">
+    <h2>Technical Skills</h2>
+    <dl>
+    {% for item in resume.technical_skills %}
+      <dt>{{ item.description }}</dt>
+      <dd>{{ item.items | join: ", " }}</dd>
+    {% endfor %}
+    </dl>
+  </div>
+  <div class="resume-section">
+    <h2>Skill Summary</h2>
+    <ul>
+      {% for skill in resume.skills %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="resume-section">
+    <h2>Education</h2>
+    {% for entry in resume.education %}
+    <div class="entry-container">
+      <div class="entry-details">
+        <div><strong>{{ entry.qualification }}</strong></div>
+        <small>{{ entry.institution }}, {{ entry.location }}.</small>
+      </div>
+      <div class="entry-dates">
+        <small>{{ entry.start }} &mdash; {{ entry.end }}</small>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="resume-section">
+    <h2>Experience</h2>
+    {% for job in resume.experience %}
+      <div class="entry-container">
+        <div class="entry-details">
+          <div><strong>{{ job.title }}</strong></div>
+          <small>{{ job.company }}, {{ job.location }}.</small>
+        </div>
+        <div class="entry-dates">
+          <small>{{ job.start }} &mdash; {{ job.end }}</small>
+        </div>
+      </div>
+      <ul>
+        {% for detail in job.details %}
+        <li>{{ detail }}</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+  <div class="resume-section">
+    <h2>Awards, Scholarships, &amp; Achievements</h2>
+    {% for award in resume.awards %}
+      <div class="entry-container">
+        <div class="entry-details">
+          <div><strong>{{ award.name }}</strong></div>
+          <small>{{ award.description }}</small>
+        </div>
+        <div class="entry-dates">
+          <small>{{ award.year }}</small>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="resume-section">
+    <h2>Activities &amp; Interests</h2>
+    <dl>
+    {% for interest in resume.interests %}
+      <dt>{{ interest.name }}</dt>
+      <dd>{{ interest.description }}</dd>
+    {% endfor %}
+    </dl>
+  </div>
 </div>

@@ -10,7 +10,7 @@ body {
   background-color:           $color-light;
   color:                      $color-dark;
   font-family:                $font-family-sans;
-  font-size:                  $font-size-small;
+  font-size:                  $font-size-script;
   font-weight:                300;
 }
 
@@ -30,6 +30,10 @@ h2 {
 
 h3 {
   font-size:                  2.4rem;
+}
+
+small {
+  font-size:                  90%;
 }
 
 a {
@@ -68,6 +72,7 @@ dt {
 
 dd {
   margin-bottom:              1rem;
+  margin-left:                2rem;
 }
 
 img {
@@ -168,7 +173,7 @@ nav ul li {
 
 .content {
   margin:                     0 auto;
-  padding:                    0 5rem;
+  padding:                    0 1.5rem;
 }
 
 footer {
@@ -185,6 +190,28 @@ footer {
 
 .copyright {
   font-size:                  $font-size-footnote;
+}
+
+.resume {
+  font-size:                  $font-size-footnote;
+}
+
+.resume .name {
+  font-family:                $font-family-serif;
+  font-weight:                700;
+  margin:                     0;
+}
+
+.name {
+  font-size:                  $font-size-huge;
+}
+
+.resume h2 {
+  border-bottom:              0.1rem solid $color-dark;
+}
+
+.entry-container {
+  margin-top:                 1rem;
 }
 
 /*******************************************************************************
@@ -241,6 +268,23 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
 
   .content {
     max-width:                58rem;
+    padding:                  0 3rem;
+  }
+
+  .entry-container::after {
+    clear:                    both;
+    content:                  "";
+    display:                  table;
+  }
+
+  .entry-details {
+    float:                    left;
+  }
+
+  .entry-dates {
+    float:                    right;
+    text-align:               right;
+    width:                    20rem;
   }
 }
 
@@ -263,6 +307,11 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
 
   .content {
     max-width:                62rem;
+    padding:                  0 5rem;
+  }
+
+  .resume {
+    font-size:                $font-size-small;
   }
 }
 

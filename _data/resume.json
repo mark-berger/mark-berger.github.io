@@ -66,7 +66,7 @@
   "education": [
     {
       "institution": "University of Waterloo",
-      "qualification": "BASc Honours Computer Engineering, Graduated With Distinction",
+      "qualification": "BASc Honours Computer Engineering",
       "location": "Waterloo, ON",
       "start": "Sept 2010",
       "end": "April 2015"
@@ -144,21 +144,23 @@
   ],
   "awards": [
     {
-      "name": "Outstanding Evaluations (All 6 Co-op Work Terms)",
-      "description": "Significantly exceeded all expectations demonstrated by exceptional performance",
-      "location": "Various, ON",
+      "name": "Graduation with Distinction",
+      "description": "Attained a cumulative average of at least 80%",
+      "year": "June 2015"
+    },
+    {
+      "name": "Outstanding Evaluations",
+      "description": "Significantly exceeded all expectations, in all 6 work terms",
       "year": "2011-2014"
     },
     {
       "name": "Nortel Networks & President’s Entrance Scholarship",
       "description": "Awarded to top students entering Electrical and Computer Engineering",
-      "location": "Waterloo, ON",
       "year": "July 2010"
     },
     {
       "name": "Best Presentation, University of Toronto Space Design Contest",
       "description": "Best Presentation in an international engineering design competition",
-      "location": "Toronto, ON",
       "year": "May 2010"
     }
   ],
