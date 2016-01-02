@@ -165,7 +165,6 @@ nav ul li {
 }
 
 .container {
-  min-height:                 100vh;
   overflow:                   hidden;
   padding:                    5rem 0 25rem 0;
   position:                   relative;
@@ -173,11 +172,20 @@ nav ul li {
 
 .content {
   margin:                     0 auto;
+  min-height:                 100%;
+  margin-bottom:              -15rem;
   padding:                    0 1.5rem;
+}
+
+.content:after {
+  content:                    "";
+  display:                    block;
+  height:                     15rem;
 }
 
 footer {
   bottom:                     0;
+  height:                     15rem;
   position:                   absolute;
   text-align:                 center;
   width:                      100%;
@@ -272,6 +280,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
   }
 
   .content {
+    font-size:                $font-size-footnote;
     max-width:                58rem;
     padding:                  0 3rem;
   }
@@ -316,6 +325,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
   }
 
   .content {
+    font-size:                $font-size-small;
     max-width:                62rem;
     padding:                  0 5rem;
   }
@@ -343,6 +353,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
   }
 
   .content {
+    font-size:                $font-size-normal;
     max-width:                72rem;
   }
 }
