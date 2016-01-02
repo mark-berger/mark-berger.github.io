@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Average:400|Roboto:300,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500,700);
 
 html, body {
   font-size:                  62.5%;
@@ -211,22 +211,12 @@ footer {
   font-size:                  $font-size-footnote;
 }
 
-.resume .name {
-  font-family:                $font-family-serif;
-  font-weight:                700;
-  margin:                     0;
-}
-
-.name {
-  font-size:                  $font-size-huge;
-}
-
 .resume h2 {
   border-bottom:              0.1rem solid $color-dark;
 }
 
 .entry-container {
-  margin-top:                 1rem;
+  margin-top:                 0.5rem;
 }
 
 /*******************************************************************************
@@ -300,6 +290,11 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
     float:                    right;
     text-align:               right;
     width:                    20rem;
+  }
+
+  .entry-items {
+    float:                    right;
+    text-align:               right;
   }
 }
 

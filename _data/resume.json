@@ -1,7 +1,7 @@
 {
   "technical_skills": [
     {
-      "description": "Advanced skill with modern web technologies",
+      "description": "Advanced with front-end technologies:",
       "items": [
         "HTML5",
         "CSS3",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "description": "Experienced with web frameworks including",
+      "description": "Experienced with back-end frameworks:",
       "items": [
         "Django",
         "Flask",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "description": "Strong RDBMS design capability with",
+      "description": "Strong RDBMS design with:",
       "items": [
         "MySQL",
         "SQL Server",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "description": "Excellent skill with object oriented programming",
+      "description": "Excellent skill in OOP:",
       "items": [
         "Python",
         "Java",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "description": "Proficiency in test-driven development",
+      "description": "Proficiency in TDD:",
       "items": [
         "Jasmine",
         "unittest",
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "description": "Development experience on different platforms",
+      "description": "Experience on various platforms:",
       "items": [
         "Android",
         "Unix",

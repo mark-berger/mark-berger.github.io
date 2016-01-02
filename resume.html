@@ -5,15 +5,18 @@ title: Resume
 ---
 {% assign resume = site.data.resume %}
 <div class="resume">
-  <p class="name">{{ site.title }}</p>
   <div class="resume-section">
     <h2>Technical Skills</h2>
-    <dl>
     {% for item in resume.technical_skills %}
-      <dt>{{ item.description }}</dt>
-      <dd>{{ item.items | join: ", " }}</dd>
+    <div class="entry-container">
+      <div class="entry-details">
+        <small>{{ item.description }}</small>
+      </div>
+      <div class="entry-items">
+        <strong><small>{{ item.items | join: ", " }}</small></strong>
+      </div>
+    </div>
     {% endfor %}
-    </dl>
   </div>
   <div class="resume-section">
     <h2>Skill Summary</h2>
