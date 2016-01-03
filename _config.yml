@@ -1,4 +1,5 @@
 # Jekyll Settings
+excerpt_separator: <!--more-->
 exclude: ["CNAME", "README.md"]
 sass:
     style: :compressed

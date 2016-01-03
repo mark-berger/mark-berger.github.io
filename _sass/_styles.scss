@@ -32,6 +32,11 @@ h3 {
   font-size:                  2.4rem;
 }
 
+time {
+  font-size:                  90%;
+  font-style:                 italic;
+}
+
 small {
   font-size:                  90%;
 }
@@ -213,6 +218,10 @@ footer {
 
 .copyright {
   font-size:                  $font-size-footnote;
+}
+
+.summary-title {
+  border-bottom:              0.1rem solid $color-dark;
 }
 
 .resume {
