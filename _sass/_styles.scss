@@ -3,7 +3,6 @@
 html, body {
   font-size:                  62.5%;
   height:                     100%;
-  line-height:                1.4;
 }
 
 body {
@@ -164,21 +163,23 @@ nav ul li {
 }
 
 .logo {
-  margin:                     2rem 0 2rem 2rem;
+  margin:                     1rem;
   transition:                 width 0.25s ease;
   width:                      7.5rem;
 }
 
 .container {
+  line-height:                1.4;
+  min-height:                 calc(100vh - 16rem);
   overflow:                   hidden;
-  padding:                    5rem 0 25rem 0;
+  padding:                    0rem 0 0rem 0;
   position:                   relative;
 }
 
 .content {
   margin:                     0 auto;
   min-height:                 100%;
-  margin-bottom:              -15rem;
+  margin-top:                 3rem;
   padding:                    0 1.5rem;
 }
 
@@ -236,6 +237,15 @@ footer {
   margin-top:                 0.5rem;
 }
 
+.not-found {
+  text-align:                 center;
+}
+
+.not-found strong {
+  color:                      #444;
+  font-size:                  $font-size-huge;
+}
+
 /*******************************************************************************
 Relative units in media queries are based on the initial value, which means
 that units are never based on results of declarations. For example, in HTML,
@@ -279,17 +289,17 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
   }
 
   .logo {
-    margin:                   4rem 0 0 0;
     width:                    10rem;
   }
 
   .container {
     margin-left:              15rem;
-    padding-top:              10rem;
+    min-height:               100vh;
   }
 
   .content {
     font-size:                $font-size-footnote;
+    margin-top:               8rem;
     max-width:                58rem;
     padding:                  0 3rem;
   }
