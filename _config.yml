@@ -6,11 +6,20 @@ paginate_path: ":num"
 sass:
     style: :compressed
 
+# Gems
+
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+
 # Custom Variables
+author:
+  email: "&#109;&#97;&#98;&#101;&#114;&#103;&#101;&#114;&#54;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+  github: "mark-berger"
+  linkedin: "maberger"
+  name: "Mark Berger"
+  uri: "http://maberger.com"
+description: "Personal website of Mark Berger, Full-Stack Engineer."
+name: "Mark Berger"
 title: "Mark Berger"
 url: "http://maberger.com"
-description: "Personal website for Mark Berger."
-contact:
-  email: "&#109;&#97;&#98;&#101;&#114;&#103;&#101;&#114;&#54;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
-  linkedin: "maberger"
-  github: "mark-berger"
