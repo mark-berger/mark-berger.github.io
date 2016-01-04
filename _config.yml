@@ -1,6 +1,8 @@
 # Jekyll Settings
 excerpt_separator: <!--more-->
 exclude: ["CNAME", "README.md"]
+paginate: 3
+paginate_path: ":num"
 sass:
     style: :compressed
 
