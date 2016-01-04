@@ -1,8 +1,10 @@
 ---
 layout: default
 permalink: /posts/
+title: Recent Posts
 ---
 
+<div class="post-grid">
 {% for post in site.posts %}
 {% assign d = post.date | date: "%-d"  %}
 {% case d %}
@@ -11,16 +13,28 @@ permalink: /posts/
   {% when '3' or '23' %}{% assign ordinal = "rd" %}
   {% else %}{% assign ordinal = "th" %}
 {% endcase %}
-  <article>
-    <h2 class="summary-title">{{ post.title }}</h2>
-    <div>{{ post.excerpt }}</div>
-    <div class="entry-container">
-      <div class="entry-details">
-        <time datetime="{{ post.date }}">{{ post.date | date: "%B" }} {{ d }}{{ ordinal }}, {{ post.date | date: "%Y" }}</time>
+  <article class="post-griditem">
+  {% if post.image_small %}
+    <a class="summary-title" href="{{ post.url }}">
+      <div class="post-image">
+        <img src="{{ post.image_small }}">
       </div>
-      <div class="entry-items">
-        <a href="{{ post.url }}">Continue Reading →</a>
+    </a>
+  {% endif %}
+    <div class="post-details">
+      <a class="summary-title" href="{{ post.url }}">
+        <h2>{{ post.title }}</h2>
+      </a>
+      <div class="excerpt">{{ post.excerpt }}</div>
+      <div class="entry-container">
+        <div class="entry-details">
+          <time datetime="{{ post.date }}">{{ post.date | date: "%B" }} {{ d }}{{ ordinal }}, {{ post.date | date: "%Y" }}</time>
+        </div>
+        <div class="entry-items">
+          <a href="{{ post.url }}">Continue Reading →</a>
+        </div>
       </div>
     </div>
   </article>
 {% endfor %}
+</div>
