@@ -6,13 +6,7 @@ title: Recent Posts
 
 <div class="post-grid">
 {% for post in site.posts %}
-{% assign d = post.date | date: "%-d"  %}
-{% case d %}
-  {% when '1' or '21' or '31' %}{% assign ordinal = "st" %}
-  {% when '2' or '22' %}{% assign ordinal = "nd" %}
-  {% when '3' or '23' %}{% assign ordinal = "rd" %}
-  {% else %}{% assign ordinal = "th" %}
-{% endcase %}
+  {% include ordinalize.html date_param=post.date %}
   <article class="post-griditem">
   {% if post.image_small %}
     <a class="summary-title" href="{{ post.url }}">

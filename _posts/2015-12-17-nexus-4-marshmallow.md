@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Upgrading Your Nexus 4 to 6.0.1 Marshmallow
 tags: android nexus marshmallow 6.0.1 adb root
 image_large: /images/2015-12-17-large-nexus-4.jpg

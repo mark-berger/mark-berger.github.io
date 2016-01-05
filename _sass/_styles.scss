@@ -22,11 +22,11 @@ h1 {
 }
 
 h2 {
-  font-size:                  2.6rem;
+  font-size:                  2.4rem;
 }
 
 h3 {
-  font-size:                  2.4rem;
+  font-size:                  2.2rem;
 }
 
 time {
@@ -61,7 +61,6 @@ code, pre, kbd {
 code {
   background-color:           darken($color-light, 8%);
   color:                      #2980b9;
-  padding:                    0.25rem 0.5rem;
 }
 
 pre {
@@ -171,7 +170,7 @@ nav ul li {
 }
 
 .container {
-  line-height:                1.4;
+  line-height:                1.5;
   min-height:                 calc(100vh - 16rem);
   overflow:                   hidden;
   padding:                    0rem 0 0rem 0;
@@ -189,6 +188,10 @@ nav ul li {
   content:                    "";
   display:                    block;
   height:                     15rem;
+}
+
+.content-post img {
+  max-width:                  100%;
 }
 
 footer {
