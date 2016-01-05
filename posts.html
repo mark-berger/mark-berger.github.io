@@ -6,29 +6,6 @@ title: Recent Posts
 
 <div class="post-grid">
 {% for post in site.posts %}
-  {% include ordinalize.html date_param=post.date %}
-  <article class="post-griditem">
-  {% if post.image_small %}
-    <a class="summary-title" href="{{ post.url }}">
-      <div class="post-image">
-        <img src="{{ post.image_small }}">
-      </div>
-    </a>
-  {% endif %}
-    <div class="post-details">
-      <a class="summary-title" href="{{ post.url }}">
-        <h2>{{ post.title }}</h2>
-      </a>
-      <div class="excerpt">{{ post.excerpt }}</div>
-      <div class="entry-container">
-        <div class="entry-details">
-          <time datetime="{{ post.date }}">{{ post.date | date: "%B" }} {{ d }}{{ ordinal }}, {{ post.date | date: "%Y" }}</time>
-        </div>
-        <div class="entry-items">
-          <a href="{{ post.url }}">Continue Reading →</a>
-        </div>
-      </div>
-    </div>
-  </article>
+{% include post-preview.html %}
 {% endfor %}
 </div>

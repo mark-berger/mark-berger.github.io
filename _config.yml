@@ -1,13 +1,12 @@
 # Jekyll Settings
 excerpt_separator: <!--more-->
 exclude: ["CNAME", "README.md"]
-paginate: 3
+paginate: 5
 paginate_path: ":num"
 sass:
     style: :compressed
 
 # Gems
-
 gems:
   - jekyll-feed
   - jekyll-sitemap

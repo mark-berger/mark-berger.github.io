@@ -155,7 +155,7 @@ nav ul li {
   font-family:                $font-family-serif;
   font-size:                  $font-size-large;
   font-weight:                500;
-  padding:                    0 0 0 2rem;
+  margin-top:                 1rem;
 }
 
 .sidebar-title p {
@@ -163,7 +163,7 @@ nav ul li {
   margin-top:                 0.5rem;
 }
 
-.logo {
+.logo svg {
   margin:                     1rem;
   transition:                 width 0.25s ease;
   width:                      7.5rem;
@@ -356,7 +356,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
     display:                  block;
   }
 
-  .logo {
+  .logo svg {
     width:                    10rem;
   }
 
@@ -399,7 +399,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
     width:                    20rem;
   }
 
-  .logo {
+  .logo svg {
     width:                    15rem;
   }
 
@@ -427,7 +427,7 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
     width:                    30rem;
   }
 
-  .logo {
+  .logo svg {
     width:                    17.5rem;
   }
 

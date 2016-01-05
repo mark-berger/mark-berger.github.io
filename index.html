@@ -1,22 +1,9 @@
 ---
 layout: default
 ---
+<h1>Recent Posts</h1>
 {% for post in paginator.posts %}
-{% include ordinalize.html date_param=post.date %}
-  <article>
-    <a class="summary-title" href="{{ post.url }}">
-      <h2>{{ post.title }}</h2>
-    </a>
-    <div class="entry-container">
-      <div class="entry-details">
-        <strong><small>{{ site.title }}</small></strong>
-      </div>
-      <div class="entry-items">
-        <small><time datetime="{{ post.date }}">{{ post.date | date: "%B" }} {{ d }}{{ ordinal }}, {{ post.date | date: "%Y" }}</time></small>
-      </div>
-    </div>
-    <div>{{ post.content }}</div>
-  </article>
+{% include post-preview.html %}
 {% endfor %}
 {% if paginator.total_pages > 1 %}
 <div class="pagination">

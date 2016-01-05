@@ -1,34 +1,19 @@
 <footer>
   <div class="contact">
     <a class="contact-icon" href="mailto:{{ site.author.email }}">
-      <svg viewBox="0 0 685 685">
-        <circle fill="#444" cx="342.5" cy="342.5" r="342.5"/>
-        <path fill="#f6f6f6" d="m331.3 367.5 17.8 0 161.5-161.5-340 0zM507.9 478.6l-338.5 0 112.7-112.7c21.2 21.4 38.3 33 57.2 33 17.2 0 29.4-5.4 56.3-32.5zM259.8 341.4l-111.7-111.7 0 224.6zM417.3 341.4l111.7-111.7 0 224.6z"/>
-      </svg>
+      {% include svg-icon.html icon=site.data.icons.email %}
       <div>Email</div>
     </a>
     <a class="contact-icon" href="https://github.com/{{ site.author.github }}">
-      <svg viewBox="0 0 685 686">
-        <circle fill="#444" cx="342" cy="344" r="342"/>
-        <path fill="#f6f6f6" d="m289.2 431.3c-7.6 10.8-12.4 21.6-14.2 32.3-5.4 4.7-20.6 7.6-38.2 5.8-7-0.9-19-5.7-43.6-38.9-15.7-15.8-27-13.8-30.3-14-4.9 0.2-9.1 1.4-11.6 5.5 8.8 7.3 17.5 15.3 26.7 26 3.6 3.9 9.9 20.1 21.1 35.2 17.9 18.6 42.2 19.2 74.8 16.5 1.9 17.1 1.9 33.6 0 52.1 48.7 12.4 81.1 9.2 128.3 1.8l-0.7-85.4c-1-12.2-4.3-24.6-14.9-37.8 65.5-10.5 110.4-39.4 112.6-111.2 1.4-28.6-2.3-56.2-25.4-79.9 5.4-19.6 7.1-40.5-2.9-65.4-21.9-3.4-45 9.1-68.3 24.3-39.5-9.5-81.4-12.4-128.6 0.4-21-14.3-42.1-28.6-68.3-25.4-9.6 23.6-9.7 45.7-2.9 66.9-25.1 30.2-25.5 47.3-26.2 68.7 2.9 106.5 75.4 114.8 112.6 122.4z"/>
-      </svg>
+      {% include svg-icon.html icon=site.data.icons.github %}
       <div>GitHub</div>
     </a>
     <a class="contact-icon" href="https://ca.linkedin.com/in/{{ site.author.linkedin }}">
-      <svg viewBox="0 0 685 685">
-        <circle fill="#444" cx="342.5" cy="342.5" r="342.5"/>
-        <ellipse fill="#f6f6f6" cx="219.4" cy="195.5" rx="38.5" ry="35.7"/>
-        <rect fill="#f6f6f6" width="69" height="205.5" x="184.2" y="257.1"/>
-        <path fill="#f6f6f6" d="m288.9 462.3 0-205.5 69.5 0 0 25.1c29.9-43 98.8-37.5 121.3 0 16.1 26.6 15.7 37.8 17.4 62.9l0 118-69.5 0-0.8-115.7c-1-24.9-10.7-38.4-32.1-38.7-15.9 0.4-35.4 14.1-35.4 31l0 123.7z"/>
-      </svg>
+      {% include svg-icon.html icon=site.data.icons.linkedin %}
       <div>LinkedIn</div>
     </a>
     <a class="contact-icon" href="{{ site.baseurl }}/feed.xml">
-      <svg viewBox="0 0 685 685">
-        <circle fill="#444" cx="342.5" cy="342.5" r="342.5"/>
-        <circle fill="#f6f6f6" cx="236.5" cy="455.9" r="44"/>
-        <path fill="#f6f6f6" d="m191.6 287.9 0 64.7c101.6 5.6 146.2 82.4 149.1 147l64.9 0C398.8 377.3 320.2 292.8 191.6 287.9ZM191.6 178.1l0 63.9c126.7 4.9 250.7 89.1 259.1 257.3l64.4 0C511.4 273.3 320 177.2 191.6 178.1Z"/>
-      </svg>
+      {% include svg-icon.html icon=site.data.icons.feed %}
       <div>Feed</div>
     </a>
   </div>
