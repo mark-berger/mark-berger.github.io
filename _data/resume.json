@@ -1,7 +1,7 @@
 {
   "technical_skills": [
     {
-      "description": "Skilled with front-end technologies:",
+      "description": "Front-end technologies/frameworks:",
       "items": [
         "HTML5",
         "CSS3",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "description": "Experienced with back-end frameworks:",
+      "description": "Back-end web frameworks:",
       "items": [
         "Django",
         "Flask",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "description": "Strong RDBMS design with:",
+      "description": "Relational databases:",
       "items": [
         "MySQL",
         "SQL Server",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "description": "Excellent skill in OOP:",
+      "description": "Object-oriented programming:",
       "items": [
         "Python",
         "Java",
@@ -38,16 +38,7 @@
       ]
     },
     {
-      "description": "Proficiency in TDD:",
-      "items": [
-        "Jasmine",
-        "unittest",
-        "RSpec",
-        "Spring MVC Test"
-      ]
-    },
-    {
-      "description": "Experience on various platforms:",
+      "description": "Platforms:",
       "items": [
         "Android",
         "Unix",
@@ -58,9 +49,9 @@
   ],
   "skills": [
     "Excellent written and oral communication skills",
-    "Quick to pick up new technologies; very productive when learning something new",
+    "Quick to pick up new technologies; very productive new things",
     "High attention to detail, strong focus on consistency and clarity",
-    "Natural tendency to take on leadership responsibilities and an active team player",
+    "Natural tendency to take on leadership roles and an active team player",
     "Smart, motivated self-starter with a passion for software and technology"
   ],
   "education": [
@@ -80,11 +71,11 @@
       "start": "Sept 2014",
       "end": "Dec 2014",
       "details": [
-        "Added features and improved reliability for shopping cart built with AngularJS",
+        "Added new features to a shopping cart built with AngularJS",
         "Developed responsive, fluid, and interactive visualizations using D3.js",
-        "Designed a back-end and jobs to extract data from Facebook, Twitter, and Google APIs",
-        "Individually built an internal dashboard for monitoring and visualizing community growth",
-        "Created a powerful Jekyll build system and web templates using GruntJS, Bower, Haml, Sass"
+        "Designed a system to extract data from Facebook, Twitter, Google+ APIs",
+        "Individually built a dashboard for monitoring and visualizing community",
+        "Created a powerful Jekyll build system using GruntJS, Bower, Haml, Sass"
       ]
     },
     {
@@ -95,9 +86,9 @@
       "end": "Dec 2013",
       "details": [
         "Built a rich and dynamic single-page web application using AngularJS",
-        "Gained experience with front-end tools such as Sass, Jade, GruntJS, Jasmine, npm",
-        "Developed a RESTful API built on Django, PostgreSQL, interfacing with the Facebook Ads APIs",
-        "Managed pull requests and code reviews as a part of an agile development team using git-flow"
+        "Gained experience with Sass, Jade, GruntJS, Jasmine, npm",
+        "Developed a RESTful API with Django, interfacing with Facebook APIs",
+        "Managed pull requests and code reviews in an agile team using git-flow"
       ]
     },
     {
@@ -107,11 +98,11 @@
       "start": "Jan 2013",
       "end": "Apr 2013",
       "details": [
-        "Developed an authenticated API capable of returning JSON, RSS, and XML formatted data",
-        "Created dynamic ad modules using CSS, JS, and HTML serving millions of views per day",
-        "Automated reporting processes by creating a wrapper for the Google Analytics API",
-        "Feature development with Ruby on Rails, including RSpec test cases following TDD practices",
-        "Gained experience working with Unix in an agile team collaborating using Git"
+        "Created ad modules in CSS, JS, HTML serving millions of views/day",
+        "Developed an authenticated API for returning JSON, RSS, and XML data",
+        "Automated reporting by creating a wrapper for the Google Analytics API",
+        "Feature development with Rails, including RSpec test cases and TDD",
+        "Gained experience in Unix with an agile team collaborating using Git"
       ]
     },
     {
@@ -121,11 +112,11 @@
       "start": "Sept 2011",
       "end": "Aug 2012",
       "details": [
-        "Rebuilt entire application messaging and notification system using JSON web services",
-        "Developed app modules, front-end scripts, back-end architecture and optimized stored procedures",
-        "Designed cross-browser UI elements to enhance usability and application performance",
-        "Refreshed existing HTML and CSS throughout the application with a modern look and feel",
-        "Played an integral role in developing, testing, and documenting a major release version"
+        "Rebuilt messaging/notification system using JSON web services",
+        "Developed scripts, architecture and optimized stored procedures",
+        "Designed UI elements to enhance usability and performance",
+        "Updated HTML and CSS throughout the app with a modern look and feel",
+        "Played an integral role in developing, testing, documenting a major release"
       ]
     },
     {
@@ -135,10 +126,10 @@
       "start": "Jan 2011",
       "end": "Apr 2011",
       "details": [
-        "Provided efficient and effective resolution directly to customers, triaging technical support issues",
-        "Demonstrated a high level of technical expertise in finding creative solutions to unique problems",
-        "Developed SQL scripts and queries optimized for gathering information and producing reports",
-        "Automated reporting processes with VBA macros, refined processes for handling routine tasks"
+        "Provided efficient resolution directly to clients, triaging technical issues",
+        "Demonstrated technical expertise finding solutions to unique problems",
+        "Developed SQL scripts and queries optimized for producing reports",
+        "Automated reporting with VBA macros; refined routine tasks"
       ]
     }
   ],
@@ -149,17 +140,17 @@
       "year": "June 2015"
     },
     {
-      "name": "Outstanding Evaluations",
-      "description": "Significantly exceeded all expectations, in all 6 work terms",
+      "name": "Outstanding Co-op Evaluations",
+      "description": "Significantly exceeded all expectations, in all 6 terms",
       "year": "2011-2014"
     },
     {
       "name": "Nortel Networks & President’s Entrance Scholarship",
-      "description": "Awarded to top students entering Electrical and Computer Engineering",
+      "description": "Awarded to top students entering Computer Engineering",
       "year": "July 2010"
     },
     {
-      "name": "Best Presentation, University of Toronto Space Design Contest",
+      "name": "Best Presentation, U of T Space Design Contest",
       "description": "Best Presentation in an international engineering design competition",
       "year": "May 2010"
     }
