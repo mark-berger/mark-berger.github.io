@@ -4,6 +4,25 @@ permalink: /resume/
 ---
 {% assign resume = site.data.resume %}
 <div class="resume">
+  <header>
+    <h1>{{ site.author.name }}｜<small>BASc Computer Engineering</small></h1>
+    <a class="left" href="mailto:{{ site.author.email }}">
+      <div class="mini-icon">{% include svg-icon.html icon=site.data.icons.email %}</div>
+      {{ site.author.email }}
+    </a>
+    <a class="center" href="https://ca.linkedin.com/in/{{ site.author.linkedin }}">
+      <div class="mini-icon">{% include svg-icon.html icon=site.data.icons.linkedin %}</div>
+      {{ site.author.linkedin }}
+    </a>
+    <a class="right" href="https://github.com/{{ site.author.github }}">
+      <div class="mini-icon">{% include svg-icon.html icon=site.data.icons.github %}</div>
+      {{ site.author.github }}
+    </a>
+    <a class="center" href="{{ site.author.uri }}">
+      <div class="mini-icon">{% include svg-icon.html icon=site.data.icons.web %}</div>
+      {{ site.author.uri | replace: 'http://', '' | replace: 'https://', '' }}
+    </a>
+  </header>
   <div class="resume-section">
     <h2>Technical Skills</h2>
     {% for item in resume.technical_skills %}

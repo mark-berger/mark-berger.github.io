@@ -241,6 +241,37 @@ footer {
   font-size:                  $font-size-footnote;
 }
 
+.resume header {
+  text-align:                 center;
+}
+
+.resume header a {
+  color:                      $color-dark;
+  padding-right:              0.5rem;
+  text-decoration:            none;
+  white-space:                nowrap;
+}
+
+.mini-icon {
+  display:                    inline-block;
+  height:                     2rem;
+  vertical-align:             middle;
+  width:                      2rem;
+}
+
+.resume h1 {
+  border:                     none;
+  font-family:                $font-family-serif;
+  font-size:                  $font-size-larger;
+  font-weight:                700;
+  margin-bottom:              0;
+}
+
+.resume h1 small {
+  font-size:                  2.5rem;
+  font-weight:                500;
+}
+
 .resume h2 {
   border-bottom:              0.1rem solid $color-dark;
 }
