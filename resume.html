@@ -5,7 +5,7 @@ permalink: /resume/
 {% assign resume = site.data.resume %}
 <div class="resume">
   <header>
-    <h1>{{ site.author.name }}｜<small>BASc Computer Engineering</small></h1>
+    <h1>{{ resume.basics.name }}｜<small>{{ resume.basics.label }}</small></h1>
     <a class="left" href="mailto:{{ site.author.email }}">
       <div class="mini-icon">{% include svg-icon.html icon=site.data.icons.email %}</div>
       {{ site.author.email }}
@@ -25,22 +25,24 @@ permalink: /resume/
   </header>
   <div class="resume-section">
     <h2>Technical Skills</h2>
-    {% for item in resume.technical_skills %}
+    {% assign t_skills = resume.skills | where: 'level', 'Technical' %}
+    {% for item in t_skills %}
     <div class="entry-container">
       <div class="entry-details">
-        <small>{{ item.description }}</small>
+        <small>{{ item.name }}:</small>
       </div>
       <div class="entry-items">
-        <strong><small>{{ item.items | join: ", " }}</small></strong>
+        <strong><small>{{ item.keywords | join: ", " }}</small></strong>
       </div>
     </div>
     {% endfor %}
   </div>
   <div class="resume-section">
     <h2>Skill Summary</h2>
+    {% assign nt_skills = resume.skills | where: 'level', 'Non-Technical' | first %}
     <ul>
-      {% for skill in resume.skills %}
-      <li>{{ skill }}</li>
+      {% for item in nt_skills.keywords %}
+      <li>{{ item }}</li>
       {% endfor %}
     </ul>
   </div>
@@ -49,30 +51,30 @@ permalink: /resume/
     {% for entry in resume.education %}
     <div class="entry-container">
       <div class="entry-details">
-        <div><strong>{{ entry.qualification }}</strong></div>
-        <small>{{ entry.institution }}, {{ entry.location }}.</small>
+        <div><strong>{{ entry.studyType }} {{ entry.area }}</strong></div>
+        <small>{{ entry.institution }}</small>
       </div>
       <div class="entry-dates">
-        <small>{{ entry.start }} &mdash; {{ entry.end }}</small>
+        <small>{{ entry.startDate | date: "%b" }} {{ entry.startDate | date: "%Y" }} &mdash; {{ entry.endDate | date: "%b" }} {{ entry.endDate | date: "%Y" }}</small>
       </div>
     </div>
     {% endfor %}
   </div>
   <div class="resume-section">
     <h2>Experience</h2>
-    {% for job in resume.experience %}
+    {% for job in resume.work %}
       <div class="entry-container">
         <div class="entry-details">
-          <div><strong>{{ job.title }}</strong></div>
-          <small>{{ job.company }}, {{ job.location }}.</small>
+          <div><strong>{{ job.position }}</strong></div>
+          <small>{{ job.company }}</small>
         </div>
         <div class="entry-dates">
-          <small>{{ job.start }} &mdash; {{ job.end }}</small>
+          <small>{{ job.startDate | date: "%b" }} {{ job.startDate | date: "%Y" }} &mdash; {{ job.endDate | date: "%b" }} {{ job.endDate | date: "%Y" }}</small>
         </div>
       </div>
       <ul>
-        {% for detail in job.details %}
-        <li>{{ detail }}</li>
+        {% for highlight in job.highlights %}
+        <li>{{ highlight }}</li>
         {% endfor %}
       </ul>
     {% endfor %}
@@ -82,11 +84,11 @@ permalink: /resume/
     {% for award in resume.awards %}
       <div class="entry-container">
         <div class="entry-details">
-          <div><strong>{{ award.name }}</strong></div>
-          <small>{{ award.description }}</small>
+          <div><strong>{{ award.title }}</strong></div>
+          <small>{{ award.summary }}</small>
         </div>
         <div class="entry-dates">
-          <small>{{ award.year }}</small>
+          <small>{{ award.date | date: "%b" }} {{ award.date | date: "%Y" }}</small>
         </div>
       </div>
     {% endfor %}
@@ -96,7 +98,7 @@ permalink: /resume/
     <dl>
     {% for interest in resume.interests %}
       <dt>{{ interest.name }}</dt>
-      <dd>{{ interest.description }}</dd>
+      <dd>{{ interest.keywords | join: ', ' }}</dd>
     {% endfor %}
     </dl>
   </div>

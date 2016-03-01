@@ -9,6 +9,7 @@ sass:
 # Gems
 gems:
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
 
 # Custom Variables
