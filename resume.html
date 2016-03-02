@@ -55,7 +55,7 @@ permalink: /resume/
         <small>{{ entry.institution }}</small>
       </div>
       <div class="entry-dates">
-        <small>{{ entry.startDate | date: "%b" }} {{ entry.startDate | date: "%Y" }} &mdash; {{ entry.endDate | date: "%b" }} {{ entry.endDate | date: "%Y" }}</small>
+        <small>{{ entry.startDate | date: "%b %Y" }} &mdash; {{ entry.endDate | date: "%b %Y" }}</small>
       </div>
     </div>
     {% endfor %}
@@ -69,7 +69,7 @@ permalink: /resume/
           <small>{{ job.company }}</small>
         </div>
         <div class="entry-dates">
-          <small>{{ job.startDate | date: "%b" }} {{ job.startDate | date: "%Y" }} &mdash; {{ job.endDate | date: "%b" }} {{ job.endDate | date: "%Y" }}</small>
+          <small>{{ job.startDate | date: "%b %Y" }} &mdash; {{ job.endDate | date: "%b %Y" }}</small>
         </div>
       </div>
       <ul>
@@ -88,7 +88,7 @@ permalink: /resume/
           <small>{{ award.summary }}</small>
         </div>
         <div class="entry-dates">
-          <small>{{ award.date | date: "%b" }} {{ award.date | date: "%Y" }}</small>
+          <small>{{ award.date | date: "%b %Y" }}</small>
         </div>
       </div>
     {% endfor %}
