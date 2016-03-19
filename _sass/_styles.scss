@@ -237,8 +237,16 @@ footer {
   text-decoration:            none;
 }
 
+.mini-icon {
+  display:                    none;
+  height:                     2rem;
+  vertical-align:             middle;
+  width:                      2rem;
+}
+
 .resume {
   font-size:                  $font-size-footnote;
+  margin-bottom:              10rem;
 }
 
 .resume header {
@@ -247,16 +255,7 @@ footer {
 
 .resume header a {
   color:                      $color-dark;
-  padding-right:              0.5rem;
   text-decoration:            none;
-  white-space:                nowrap;
-}
-
-.mini-icon {
-  display:                    inline-block;
-  height:                     2rem;
-  vertical-align:             middle;
-  width:                      2rem;
 }
 
 .resume h1 {
@@ -265,19 +264,55 @@ footer {
   font-size:                  $font-size-larger;
   font-weight:                700;
   margin-bottom:              0;
-}
-
-.resume h1 small {
-  font-size:                  2.5rem;
-  font-weight:                500;
+  margin-top:                 0;
 }
 
 .resume h2 {
   border-bottom:              0.1rem solid $color-dark;
+  font-size:                  2.4rem;
 }
 
-.entry-container {
+.resume h2.title {
+  border:                     none;
+  color:                      #555;
+  font-family:                $font-family-serif;
+  font-size:                  2.5rem;
+  font-weight:                500;
+  letter-spacing:             0;
+  margin-top:                 0;
+}
+
+.resume .left-header {
+  text-align:                 left;
+}
+
+.resume .right-header {
+  text-align:                 left;
+}
+
+.resume .summary p {
+  text-align:                 justify;
+}
+
+.resume-contact {
+  font-size:                  $font-size-footnote;
+}
+
+.resume .contact-label {
+  display:                    inline-block;
+  font-weight:                500;
+}
+
+.resume .right-detail {
+  font-weight:                300;
+}
+
+.item {
   margin-top:                 0.5rem;
+}
+
+.date {
+  font-size:                  90%;
 }
 
 .not-found {
@@ -321,7 +356,7 @@ footer {
   width:                      100%;
 }
 
-.post-griditem .entry-container {
+.post-griditem .item {
   font-size:                  $font-size-footnote;
 }
 
@@ -403,24 +438,35 @@ the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
     padding:                  0 3rem;
   }
 
-  .entry-container::after {
+  .item::after {
     clear:                    both;
     content:                  "";
     display:                  table;
   }
 
-  .entry-details {
+  .left {
     float:                    left;
   }
 
-  .entry-dates {
+  .right {
     float:                    right;
     text-align:               right;
   }
 
-  .entry-items {
-    float:                    right;
+  .resume .right-header {
     text-align:               right;
+  }
+
+  .resume .contact-label {
+    display:                  none;
+  }
+
+  .resume .right-detail {
+    font-weight:                500;
+  }
+
+  .mini-icon {
+    display:                  inline-block;
   }
 }
 
