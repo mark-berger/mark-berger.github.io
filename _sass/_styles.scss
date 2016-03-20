@@ -9,6 +9,10 @@ body {
   font-family:                $font-family-sans;
   font-size:                  $font-size-script;
   font-weight:                300;
+
+  @include bp-small {
+    font-size:                $font-size-normal;
+  }
 }
 
 h1, h2, h3 {
@@ -106,6 +110,23 @@ tbody tr:nth-child(even) td {
   background-color:           $color-dark;
   color:                      $color-light;
   transition:                 width 0.25s ease;
+
+  @include bp-small {
+    bottom:                   0;
+    left:                     0;
+    position:                 fixed;
+    text-align:               center;
+    top:                      0;
+    width:                    15rem;
+  }
+
+  @include bp-normal {
+    width:                    20rem;
+  }
+
+  @include bp-large {
+    width:                    30rem;
+  }
 }
 
 .sidebar-container {
@@ -113,6 +134,11 @@ tbody tr:nth-child(even) td {
   display:                    flex;
   justify-content:            space-between;
   flex-wrap:                  wrap;
+
+  @include bp-small {
+    margin:                   0 auto;
+    min-height:               100vh;
+  }
 }
 
 .sidebar-container nav {
@@ -136,18 +162,31 @@ nav ul {
   font-weight:                700;
   padding-left:               0;
   text-transform:             uppercase;
+
+  @include bp-small {
+    margin-top:               0;
+  }
 }
 
 nav ul li {
   display:                    inline-block;
   list-style:                 none;
   padding:                    0.8rem 0.6rem;
+
+  @include bp-small {
+    display:                  block;
+  }
 }
 
 .sidebar-item {
   align-items:                center;
   display:                    flex;
   margin:                     0 auto;
+
+  @include bp-small {
+    display:                  block;
+    width:                    100%;
+  }
 }
 
 .sidebar-title {
@@ -156,6 +195,19 @@ nav ul li {
   font-size:                  $font-size-large;
   font-weight:                500;
   margin-top:                 1rem;
+
+  @include bp-small {
+    font-size:                $font-size-larger;
+    padding:                  0;
+  }
+
+  @include bp-normal {
+    font-size:                5rem;
+  }
+
+  @include bp-large {
+    font-size:                $font-size-huge;
+  }
 }
 
 .sidebar-title p {
@@ -167,6 +219,18 @@ nav ul li {
   margin:                     1rem;
   transition:                 width 0.25s ease;
   width:                      7.5rem;
+
+  @include bp-small {
+    width:                    10rem;
+  }
+
+  @include bp-normal {
+    width:                    15rem;
+  }
+
+  @include bp-large {
+    width:                    17.5rem;
+  }
 }
 
 .container {
@@ -175,6 +239,19 @@ nav ul li {
   overflow:                   hidden;
   padding:                    0rem 0 0rem 0;
   position:                   relative;
+
+  @include bp-small {
+    margin-left:              15rem;
+    min-height:               100vh;
+  }
+
+  @include bp-normal {
+    margin-left:              20rem;
+  }
+
+  @include bp-large {
+    margin-left:              30rem;
+  }
 }
 
 .content {
@@ -182,6 +259,24 @@ nav ul li {
   min-height:                 100%;
   margin-top:                 3rem;
   padding:                    0 1.5rem;
+
+  @include bp-small {
+    font-size:                $font-size-footnote;
+    margin-top:               8rem;
+    max-width:                58rem;
+    padding:                  0 3rem;
+  }
+
+  @include bp-normal {
+    font-size:                $font-size-small;
+    max-width:                62rem;
+    padding:                  0 5rem;
+  }
+
+  @include bp-large {
+    font-size:                $font-size-normal;
+    max-width:                72rem;
+  }
 }
 
 .content:after {
@@ -242,11 +337,19 @@ footer {
   height:                     2rem;
   vertical-align:             middle;
   width:                      2rem;
+
+  @include bp-small {
+    display:                  inline-block;
+  }
 }
 
 .resume {
   font-size:                  $font-size-footnote;
   margin-bottom:              5rem;
+
+  @include bp-large {
+    font-size:                $font-size-small;
+  }
 }
 
 .resume header {
@@ -288,6 +391,10 @@ footer {
 
 .resume .right-header {
   text-align:                 left;
+
+  @include bp-small {
+    text-align:               right;
+  }
 }
 
 .resume .summary p {
@@ -301,10 +408,18 @@ footer {
 .resume .contact-label {
   display:                    inline-block;
   font-weight:                500;
+
+  @include bp-small {
+    display:                  none;
+  }
 }
 
 .resume .right-detail {
   font-weight:                300;
+
+  @include bp-small {
+    font-weight:                500;
+  }
 }
 
 .resume .download {
@@ -313,6 +428,27 @@ footer {
 
 .item {
   margin-top:                 0.5rem;
+}
+
+.item::after {
+  @include bp-small {
+    clear:                    both;
+    content:                  "";
+    display:                  table;
+  }
+}
+
+.left {
+  @include bp-small {
+    float:                    left;
+  }
+}
+
+.right {
+  @include bp-small {
+    float:                    right;
+    text-align:               right;
+  }
 }
 
 .date {
@@ -382,145 +518,4 @@ footer {
 
 .post-details {
   padding:                    1rem;
-}
-
-/*******************************************************************************
-Relative units in media queries are based on the initial value, which means
-that units are never based on results of declarations. For example, in HTML,
-the ‘em’ unit is relative to the initial value of ‘font-size’. (16px)
-*******************************************************************************/
-@media (min-width: 50rem) {
-  body {
-    font-size:                $font-size-normal;
-  }
-
-  .sidebar {
-    bottom:                   0;
-    left:                     0;
-    position:                 fixed;
-    text-align:               center;
-    top:                      0;
-    width:                    15rem;
-  }
-
-  .sidebar-container {
-    margin:                   0 auto;
-    min-height:               100vh;
-  }
-
-  .sidebar-item {
-    display:                  block;
-    width:                    100%;
-  }
-
-  .sidebar-title {
-    font-size:                $font-size-larger;
-    padding:                  0;
-  }
-
-  nav ul {
-    margin-top:               0;
-  }
-
-  nav ul li {
-    display:                  block;
-  }
-
-  .logo svg {
-    width:                    10rem;
-  }
-
-  .container {
-    margin-left:              15rem;
-    min-height:               100vh;
-  }
-
-  .content {
-    font-size:                $font-size-footnote;
-    margin-top:               8rem;
-    max-width:                58rem;
-    padding:                  0 3rem;
-  }
-
-  .item::after {
-    clear:                    both;
-    content:                  "";
-    display:                  table;
-  }
-
-  .left {
-    float:                    left;
-  }
-
-  .right {
-    float:                    right;
-    text-align:               right;
-  }
-
-  .resume .right-header {
-    text-align:               right;
-  }
-
-  .resume .contact-label {
-    display:                  none;
-  }
-
-  .resume .right-detail {
-    font-weight:                500;
-  }
-
-  .mini-icon {
-    display:                  inline-block;
-  }
-}
-
-@media (min-width: 60rem) {
-  .sidebar {
-    width:                    20rem;
-  }
-
-  .logo svg {
-    width:                    15rem;
-  }
-
-  .sidebar-title {
-    font-size:                5rem;
-  }
-
-  .container {
-    margin-left:              20rem;
-  }
-
-  .content {
-    font-size:                $font-size-small;
-    max-width:                62rem;
-    padding:                  0 5rem;
-  }
-
-  .resume {
-    font-size:                $font-size-small;
-  }
-}
-
-@media (min-width: 80rem) {
-  .sidebar {
-    width:                    30rem;
-  }
-
-  .logo svg {
-    width:                    17.5rem;
-  }
-
-  .sidebar-title {
-    font-size:                $font-size-huge;
-  }
-
-  .container {
-    margin-left:              30rem;
-  }
-
-  .content {
-    font-size:                $font-size-normal;
-    max-width:                72rem;
-  }
 }

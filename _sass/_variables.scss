@@ -18,3 +18,10 @@ $font-size-tiny:              1.2rem;
 $font-family-sans:            Roboto, Helvetica, Arial, sans-serif;
 $font-family-serif:           "Palatino Linotype", Palatino, Garamond, Georgia, serif;
 $font-family-mono:            Consolas, Menlo, Monaco, monospace;
+
+/*******************************************************************************
+ Breakpoints
+*******************************************************************************/
+$breakpoint-small:            50rem;
+$breakpoint-normal:           60rem;
+$breakpoint-large:            80rem;
