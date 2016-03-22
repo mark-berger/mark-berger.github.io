@@ -65,10 +65,15 @@ code, pre, kbd {
 code {
   background-color:           darken($color-light, 8%);
   color:                      #2980b9;
+  padding:                    0.2rem 0.5rem;
 }
 
 pre {
   padding:                    2rem;
+}
+
+pre code {
+  padding:                    0;
 }
 
 dt {
