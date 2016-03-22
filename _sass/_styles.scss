@@ -147,7 +147,6 @@ tbody tr:nth-child(even) td {
   }
 
   @include bp-large {
-    font-size:                $font-size-normal;
     max-width:                72rem;
   }
 }
