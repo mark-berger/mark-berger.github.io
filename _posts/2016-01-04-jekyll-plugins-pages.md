@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll Templates, Liquid, and JSON
+title: Using JSON and Liquid Tags in Jekyll Templates
 tags: jekyll github pages liquid plugin snippet tip include template svg data json
 image_small: /images/2016-01-04-small-jekyll-include.png
 ---

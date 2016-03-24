@@ -3,7 +3,7 @@ layout: post
 title: Upgrading Your Nexus 4 to 6.0.1 Marshmallow
 tags: android nexus marshmallow 6.0.1 adb root
 image_large: /images/2015-12-17-large-nexus-4.jpg
-image_small: /images/2015-12-17-small-nexus-4.jpg
+image_small: /images/2015-12-17-small-nexus-4.png
 ---
 
 With the recent release of [Android 6.0 Marshmallow](https://www.android.com/intl/en_ca/versions/marshmallow-6-0/ "Android 6.0 Marshmallow"), Google has dropped support for over-the-air updates on the Nexus 4. If your device feels like it's aging and you're interested in spending some time to upgrade it and enable some more advanced features, then this post will probably help you out.
