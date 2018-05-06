@@ -1,17 +1,17 @@
 # maberger.com
 
-Personal website for [http://maberger.com/](http://maberger.com/) built with [Jekyll](http://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
+Personal website for [https://maberger.com/](https://maberger.com/) built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Requirements
 
 ```sh
-gem install github pages
+bundle install
 ```
 
 ## Usage
 
 ```sh
-jekyll serve
+bundle exec jekyll serve
 ```
 
 ## License
