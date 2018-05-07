@@ -50,7 +50,12 @@ ul {
 
   a {
     color: $color-light;
+    padding-bottom: 0.5rem;
     text-decoration: none;
+
+    &.active {
+      border-bottom: 0.2rem solid $color-light;
+    }
   }
 }
 
