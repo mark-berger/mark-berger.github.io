@@ -1,32 +1,12 @@
 ---
 layout: default
 ---
-<h1>Recent Posts</h1>
-{% for post in paginator.posts %}
-{% include post-preview.html %}
-{% endfor %}
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  <div class="paginate-left">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">← Prev</a>
-  {% endif %}
-  </div>
-  <div class="paginate-center">
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      {{ page }}
-    {% elsif page == 1 %}
-      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-  </div>
-  <div class="paginate-right">
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next →</a>
-  {% endif %}
-  </div>
-</div>
-{% endif %}
+<section>
+  <svg viewBox="0 0 100 100">
+    <path d="M43.86 1004.093H21.58l-11.14-19.295 11.14-19.294h22.28l11.139 19.294z" transform="matrix(1.07723 .62194 -.62194 1.07723 627.236 -1052.068)"></path>
+    <path d="M43.86 1004.093H21.58l-11.14-19.295 11.14-19.294h22.28l11.139 19.294z" transform="matrix(1.07723 .62194 -.62194 1.07723 603.236 -1010.568)"></path>
+    <path d="M43.86 1004.093H21.58l-11.14-19.295 11.14-19.294h22.28l11.139 19.294z" transform="matrix(1.07723 .62194 -.62194 1.07723 651.236 -1010.568)"></path>
+    <path d="M50 1v29M49.84 28.935l25.096 14.532M50.794 28.539L25.698 43.07M73.946 42.383v29M73.286 70.118L98.382 84.65M75.04 69.921L49.944 84.454M26.125 42.383v29M25.466 70.118L50.562 84.65M27.22 69.921L2.122 84.454"></path>
+  </svg>
+  <h1>Mark Berger</h1>
+</section>

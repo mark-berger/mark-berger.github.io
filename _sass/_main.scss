@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$color-dark: #333;
+$color-light: #ddd;
+
+$font-size-large: 2rem;
+$font-size-normal: 1.8rem;
+$font-size-small: 1.6rem;
+$font-size-tiny: 1.4rem;
+$font-family-sans: Lato, sans-serif;
+
+html, body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: $color-dark;
+  color: $color-light;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: $font-family-sans;
+  font-size: $font-size-tiny;
+  font-weight: 300;
+  min-height: 100vh;
+  text-align: center;
+
+  > * {
+    flex: 1 100%;
+  }
+}
+
+h1 {
+  font-size: $font-size-large;
+  font-weight: 400;
+}
+
+ul {
+  font-size: $font-size-tiny;
+  font-weight: 400;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 0 1rem;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $color-light;
+    text-decoration: none;
+  }
+}
+
+svg {
+  fill: none;
+  height: 7.5rem;
+  stroke: $color-light;
+  stroke-width: 0.2rem;
+  width: 7.5rem;
+}
+
+header {
+  align-self: flex-start;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+footer svg {
+  cursor: pointer;
+  height: 3rem;
+  stroke-width: 0.4rem;
+  width: 3rem;
+
+  rect:first-child {
+    fill: $color-light;
+  }
+
+  ellipse {
+    fill: $color-dark
+  }
+}
