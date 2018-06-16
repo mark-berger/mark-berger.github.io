@@ -60,11 +60,9 @@ ul {
 }
 
 svg {
-  fill: none;
-  height: 7.5rem;
-  stroke: $color-light;
-  stroke-width: 0.2rem;
-  width: 7.5rem;
+  fill: #ddd;
+  height: 10rem;
+  width: 10rem;
 }
 
 header {
@@ -84,6 +82,7 @@ footer {
 footer svg {
   cursor: pointer;
   height: 3rem;
+  stroke: $color-light;
   stroke-width: 0.4rem;
   width: 3rem;
 

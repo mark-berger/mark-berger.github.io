@@ -1,5 +1,5 @@
 <svg viewBox="{{ include.icon.viewbox }}">
 {% for path in include.icon.paths %}
-  <path d="{{ path.d }}" {% if path.transform %}transform="{{ path.transform }}"{% endif %}/>
+  <path d="{{ path.d }}"/>
 {% endfor %}
 </svg>
