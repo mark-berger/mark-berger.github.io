@@ -4,19 +4,13 @@
     "url": "/"
   },
   {
-    "title": "Resume",
-    "url": "/resume/"
-  },
-  {
+    "external": true,
     "title": "GitHub",
     "url": "https://github.com/mark-berger"
   },
   {
+    "external": true,
     "title": "LinkedIn",
     "url": "https://www.linkedin.com/in/maberger/"
-  },
-  {
-    "title": "Contact",
-    "url": "/contact/"
   }
 ]

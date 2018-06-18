@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 $color-dark: #333;
+$color-med: #666;
 $color-light: #ddd;
+$color-lighter: #bbb;
 
-$font-size-large: 2rem;
-$font-size-normal: 1.8rem;
-$font-size-small: 1.6rem;
+@import 'dark';
+@import 'light';
+
+$font-size-large: 2.8rem;
+$font-size-normal: 2rem;
+$font-size-small: 1.8rem;
 $font-size-tiny: 1.4rem;
 $font-family-sans: Lato, sans-serif;
 
@@ -17,8 +22,6 @@ html, body {
 
 body {
   align-items: center;
-  background-color: $color-dark;
-  color: $color-light;
   display: flex;
   flex-flow: row wrap;
   font-family: $font-family-sans;
@@ -33,8 +36,14 @@ body {
 }
 
 h1 {
-  font-size: $font-size-large;
   font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: $font-size-small;
+  font-weight: 300;
+  margin-top: 0.5rem;
 }
 
 ul {
@@ -49,20 +58,14 @@ ul {
   }
 
   a {
-    color: $color-light;
     padding-bottom: 0.5rem;
     text-decoration: none;
-
-    &.active {
-      border-bottom: 0.2rem solid $color-light;
-    }
   }
 }
 
 svg {
-  fill: #ddd;
-  height: 10rem;
-  width: 10rem;
+  height: 12.5rem;
+  width: 12.5rem;
 }
 
 header {
@@ -82,15 +85,6 @@ footer {
 footer svg {
   cursor: pointer;
   height: 3rem;
-  stroke: $color-light;
   stroke-width: 0.4rem;
   width: 3rem;
-
-  rect:first-child {
-    fill: $color-light;
-  }
-
-  ellipse {
-    fill: $color-dark
-  }
 }

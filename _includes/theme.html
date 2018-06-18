@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  function toggle() {
+    var state = document.body.getAttribute('data-state');
+    var theme = state === 'dark' ? 'light' : 'dark';
+
+    localStorage.setItem('theme', theme);
+
+    document.body.setAttribute('data-state', theme);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var theme = localStorage.getItem('theme');
+
+    if (theme) {
+      document.body.setAttribute('data-state', theme);
+    }
+  });
+</script>
