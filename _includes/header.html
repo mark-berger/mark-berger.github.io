@@ -7,7 +7,7 @@
           <a class="active" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
         {% else %}
           {% if item.external %}
-            <a target="_blank" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+            <a target="_blank" href="{{ site.baseurl }}{{ item.url }}" rel="noreferrer">{{ item.title }}</a>
           {% else %}
             <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
           {% endif %}
