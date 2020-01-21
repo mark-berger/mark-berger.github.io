@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 $color-dark: #333;
-$color-med: #666;
+$color-med: #444;
 $color-light: #ddd;
-$color-lighter: #bbb;
-
-@import 'dark';
-@import 'light';
+$color-lighter: #ccc;
 
 $font-size-large: 2.8rem;
 $font-size-normal: 2rem;
 $font-size-small: 1.8rem;
 $font-size-tiny: 1.4rem;
 $font-family-sans: Lato, sans-serif;
+
+:root {
+  --color-background: #333;
+  --color-foreground: #ddd;
+  --color-header: #ccc;
+}
 
 html, body {
   font-size: 62.5%;
@@ -22,6 +25,8 @@ html, body {
 
 body {
   align-items: center;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   display: flex;
   flex-flow: row wrap;
   font-family: $font-family-sans;
@@ -41,6 +46,7 @@ h1 {
 }
 
 h2 {
+  color: var(--color-header);
   font-size: $font-size-small;
   font-weight: 300;
   margin-top: 0.5rem;
@@ -58,12 +64,18 @@ ul {
   }
 
   a {
+    color: var(--color-foreground);
     padding-bottom: 0.5rem;
     text-decoration: none;
+
+    &.active {
+      border-bottom: 0.2rem solid var(--color-foreground);
+    }
   }
 }
 
 svg {
+  fill: var(--color-foreground);
   height: 12.5rem;
   width: 12.5rem;
 }
@@ -85,6 +97,15 @@ footer {
 footer svg {
   cursor: pointer;
   height: 3rem;
+  stroke: var(--color-foreground);
   stroke-width: 0.4rem;
   width: 3rem;
+
+  rect:first-child {
+    fill: var(--color-foreground);
+  }
+
+  ellipse {
+    fill: var(--color-background);
+  }
 }

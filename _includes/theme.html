@@ -1,18 +1,27 @@
 <script type="text/javascript">
+  function setVariables(isDark) {
+    const root = document.documentElement;
+    const colorBackground = isDark ? '#333' : '#ddd';
+    const colorForeground = isDark ? '#ddd' : '#333';
+    const colorHeader = isDark ? '#ccc' : '#444';
+
+    root.style.setProperty('--color-background', colorBackground);
+    root.style.setProperty('--color-foreground', colorForeground);
+    root.style.setProperty('--color-header', colorHeader);
+  }
+
   function toggle() {
-    var state = document.body.getAttribute('data-state');
-    var theme = state === 'dark' ? 'light' : 'dark';
+    const root = document.documentElement;
+    const color = getComputedStyle(root).getPropertyValue('--color-background').trim();
+    const isDark = color === '#ddd' ? true : false;
 
-    localStorage.setItem('theme', theme);
+    setVariables(isDark);
 
-    document.body.setAttribute('data-state', theme);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    var theme = localStorage.getItem('theme');
-
-    if (theme) {
-      document.body.setAttribute('data-state', theme);
-    }
+    let isDark = localStorage.getItem('theme') !== 'light';
+    setVariables(isDark);
   });
 </script>
