@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-$color-dark: #333;
-$color-med: #444;
-$color-light: #ddd;
-$color-lighter: #ccc;
-
 $font-size-large: 2.8rem;
 $font-size-normal: 2rem;
 $font-size-small: 1.8rem;
 $font-size-tiny: 1.4rem;
 $font-family-sans: Lato, sans-serif;
 
-:root {
+body {
   --color-background: #333;
   --color-foreground: #ddd;
   --color-header: #ccc;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    --color-background: #ddd;
+    --color-foreground: #333;
+    --color-header: #444;
+  }
 }
 
 html, body {
