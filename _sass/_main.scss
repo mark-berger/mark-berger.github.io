@@ -84,11 +84,22 @@ ul {
 svg {
   fill: var(--color-foreground);
   height: 12.5rem;
+  overflow: visible;
   width: 12.5rem;
 }
 
 header {
   align-self: flex-start;
+
+  svg {
+    cursor: pointer;
+    height: 2.2rem;
+    position: absolute;
+    right: 1.2rem;
+    stroke: var(--color-foreground);
+    top: 1.2rem;
+    width: 2.2rem;
+  }
 }
 
 main {
@@ -97,22 +108,7 @@ main {
 
 footer {
   align-self: flex-end;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: center;
-}
-
-footer svg {
-  cursor: pointer;
-  height: 3rem;
-  stroke: var(--color-foreground);
-  stroke-width: 0.4rem;
-  width: 3rem;
-
-  rect:first-child {
-    fill: var(--color-foreground);
-  }
-
-  ellipse {
-    fill: var(--color-background);
-  }
 }
