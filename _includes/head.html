@@ -8,8 +8,9 @@
 
   <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#333">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
