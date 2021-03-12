@@ -1,7 +1,7 @@
-$font-size-large: 2.8rem;
-$font-size-normal: 2rem;
-$font-size-small: 1.8rem;
-$font-size-tiny: 1.4rem;
+$size-large: 2.8rem;
+$size-normal: 2rem;
+$size-small: 1.8rem;
+$size-tiny: 1.4rem;
 $font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 
 body {
@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   font-family: $font-family-sans;
-  font-size: $font-size-tiny;
+  font-size: $size-tiny;
   font-weight: 300;
   min-height: 100vh;
   text-align: center;
@@ -48,7 +48,7 @@ h1 {
 
 h2 {
   color: var(--color-header);
-  font-size: $font-size-small;
+  font-size: $size-small;
   font-weight: 300;
   margin-top: 0.5rem;
 
@@ -58,16 +58,20 @@ h2 {
 }
 
 ul {
-  font-size: $font-size-tiny;
+  display: table;
+  font-size: $size-tiny;
   font-weight: 400;
+  list-style: none;
+  margin: $size-tiny auto;
   padding-left: 0;
   text-align: center;
 
   li {
-    display: inline-block;
-    padding: 0 0.5rem;
+    display: table-cell;
+    list-style: none;
+    padding: 0 $size-tiny;
     text-transform: uppercase;
-    width: 7rem;
+    width: 6rem;
   }
 
   a {
@@ -90,25 +94,62 @@ svg {
 
 header {
   align-self: flex-start;
-
-  svg {
-    cursor: pointer;
-    height: 2.2rem;
-    position: absolute;
-    right: 1.2rem;
-    stroke: var(--color-foreground);
-    top: 1.2rem;
-    width: 2.2rem;
-  }
 }
 
 main {
   width: 100%;
 }
 
+form {
+  margin: 0 auto;
+  max-width: 30rem;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: $size-small;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+button, input, textarea {
+  background: var(--color-background);
+  border: 2px solid var(--color-foreground);
+  box-sizing: border-box;
+  color: var(--color-foreground);
+  display: block;
+  height: 4rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  margin: 2rem auto;
+  width: 15rem;
+}
+
+textarea {
+  font-family: $font-family-sans;
+  height: auto;
+  resize: none;
+}
+
 footer {
   align-self: flex-end;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: $size-tiny;
+  margin: $size-tiny 0;
   text-align: center;
+
+  div {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  svg {
+    height: 2.2rem;
+    stroke: var(--color-foreground);
+    width: 2.2rem;
+  }
 }

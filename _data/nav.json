@@ -12,5 +12,9 @@
     "external": true,
     "title": "LinkedIn",
     "url": "https://www.linkedin.com/in/maberger/"
+  },
+  {
+    "title": "Contact",
+    "url": "/contact"
   }
 ]

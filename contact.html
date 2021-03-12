@@ -1,0 +1,15 @@
+---
+layout: default
+permalink: /contact.html
+---
+<section>
+  {% include logo.html %}
+  <h1>Contact</h1>
+  <form action="mailto:{{site.author.email}}" method="GET" target="_blank">
+    <label for="subject">Subject</label>
+    <input name="subject" id="subject" type="text" required>
+    <label class="label" for="body">Body</label>
+    <textarea name="body" id="body" rows="7" required></textarea>
+    <button type="submit">Send Email</button>
+  </form>
+</section>
