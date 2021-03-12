@@ -16,4 +16,4 @@ bundle exec jekyll serve --host=0.0.0.0
 
 ## License
 
-Data in [_data/resume.json](_data/resume.json) and posts in the [_posts/](_posts/) directory are copyrighted by [Mark Berger](https://maberger.com "Mark Berger's Website"). All other content is released under the [MIT License](https://www.opensource.org/licenses/MIT).
+Source code is released under the [Apache License 2.0](./LICENSE).
